@@ -1,5 +1,5 @@
 {
-  "name": "monobalance",
+  "name": "MonoBalance",
   "version": "1.0.0",
   "description": "Моніторинг балансу Monobank з конвертацією валют (Electron)",
   "author": "Vasyl Tsykhmystro",
