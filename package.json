@@ -1,0 +1,43 @@
+{
+  "name": "BankBalance",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dist": "electron-builder -w"
+  },
+  "//": "dist = зібрати інсталятор для Windows",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "electron": "^33.2.0",
+    "electron-builder": "^26.0.12"
+  },
+  "dependencies": {
+    "keytar": "^7.9.0"
+  },
+  "build": {
+    "appId": "com.yourcompany.bankbalance",
+    "asar": true,
+    "files": [
+      "index.html",
+      "main.js",
+      "preload.js",
+      "assets/**",
+      "!**/*.map",
+      "!**/*.test.*",
+      "!node_modules/.cache/**"
+    ],
+    "win": {
+      "target": "nsis",
+      "artifactName": "BankBalance-Setup-${version}.exe"
+    }
+  },
+  "description": "Simple Electron app to view Monobank balances"
+
+}
+

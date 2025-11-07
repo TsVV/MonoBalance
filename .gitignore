@@ -1,0 +1,43 @@
+# Залежності
+node_modules/
+
+# Конфігурація з чутливими даними
+config.js
+
+# Логи
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Системні файли
+.DS_Store
+Thumbs.db
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build / Output
+dist/
+build/
+out/
+electron-out/
+
+# Tooling caches
+.cache/
+.parcel-cache/
+webpack-stats.json
+
+# Editor temp logs
+*.log
+
+# Env / secrets
+.env
+.env.*
+
+# Інше
+*.bak
+*.tmp
