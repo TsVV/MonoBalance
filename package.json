@@ -1,18 +1,30 @@
 {
-  "name": "MonoBalance",
+  "name": "monobalance",
   "version": "1.0.0",
-  "description": "",
+  "description": "Моніторинг балансу Monobank з конвертацією валют (Electron)",
+  "author": "Vasyl Tsykhmystro",
+  "license": "CC-BY-NC-4.0",
   "main": "main.js",
+  "type": "commonjs",
+  "keywords": [
+    "electron",
+    "monobank",
+    "balance",
+    "converter"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TsVV/MonoBalance.git"
+  },
+  "homepage": "https://github.com/TsVV/MonoBalance",
+  "bugs": {
+    "url": "https://github.com/TsVV/MonoBalance/issues"
+  },
   "scripts": {
     "start": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dist": "electron-builder -w"
   },
-  "//": "dist = зібрати інсталятор для Windows",
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
   "devDependencies": {
     "electron": "^33.2.0",
     "electron-builder": "^26.0.12"
@@ -21,7 +33,7 @@
     "keytar": "^7.9.0"
   },
   "build": {
-    "appId": "com.yourcompany.MonoBalance",
+    "appId": "io.postach.tsvv.monobalance",
     "asar": true,
     "files": [
       "index.html",
@@ -36,8 +48,5 @@
       "target": "nsis",
       "artifactName": "MonoBalance-Setup-${version}.exe"
     }
-  },
-  "description": "Simple Electron app to view Monobank balances"
-
+  }
 }
-
