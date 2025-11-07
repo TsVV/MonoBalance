@@ -1,5 +1,5 @@
 {
-  "name": "BankBalance",
+  "name": "MonoBalance",
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
@@ -21,7 +21,7 @@
     "keytar": "^7.9.0"
   },
   "build": {
-    "appId": "com.yourcompany.bankbalance",
+    "appId": "com.yourcompany.MonoBalance",
     "asar": true,
     "files": [
       "index.html",
@@ -34,7 +34,7 @@
     ],
     "win": {
       "target": "nsis",
-      "artifactName": "BankBalance-Setup-${version}.exe"
+      "artifactName": "MonoBalance-Setup-${version}.exe"
     }
   },
   "description": "Simple Electron app to view Monobank balances"

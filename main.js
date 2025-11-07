@@ -2,7 +2,7 @@ const { app, BrowserWindow, screen, ipcMain } = require('electron');
 const path = require('path');
 const keytar = require('keytar');
 
-const SERVICE = 'BankBalanceApp';
+const SERVICE = 'MonoBalanceApp';
 const ACCOUNT = 'monobank_token';
 
 ipcMain.handle('token:save', async (_e, token) => {
